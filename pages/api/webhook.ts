@@ -38,7 +38,7 @@ export default function handler(
         res.status(403);
       }
     }
-   } else if (req.method == "POST") {
+   } else if (req.method === "POST") {
       let body = req.body;
 
       // Check the Incoming webhook message
